@@ -1,0 +1,23 @@
+{
+  "name": "tgapp-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "grammy": "^1.46.0",
+    "https-proxy-agent": "^9.1.0",
+    "node-telegram-bot-api": "^2.1.0"
+  }
+}
