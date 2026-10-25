@@ -1,0 +1,523 @@
+
+.order-detail-page {
+    padding: 16px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.order-header-box h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.order-header-date {
+    font-size: 13px;
+    color: var(--hint-color);
+}
+
+.order-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-card);
+    padding: 16px;
+}
+
+.card-heading {
+    margin: 0 0 14px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.status-tracker {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.status-tracker::before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    right: 14px;
+    height: 2px;
+    background-color: var(--border-color);
+    z-index: 1;
+}
+
+.tracker-node {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.tracker-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--secondary-bg);
+    border: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--hint-color);
+    margin-bottom: 6px;
+}
+
+.tracker-node.done .tracker-circle {
+    background-color: var(--accent-yellow);
+    border-color: var(--accent-yellow);
+    color: #18181b;
+}
+
+.tracker-text {
+    font-size: 10px;
+    text-align: center;
+    color: var(--hint-color);
+    line-height: 1.2;
+}
+
+.tracker-node.done .tracker-text {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.delivery-period-note {
+    font-size: 13px;
+    font-weight: 600;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+
+.detail-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.detail-info-row.col {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.detail-info-row span {
+    color: var(--hint-color);
+}
+
+.goods-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.good-item-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.good-item-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: var(--secondary-bg);
+}
+
+.good-item-info {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.good-title {
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.good-meta {
+    font-size: 12px;
+    color: var(--hint-color);
+}
+
+.good-cost {
+    flex: 0 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.order-bottom-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.final-price {
+    color: var(--accent-yellow);
+    font-size: 17px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.score-selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.score-pills {
+    display: flex;
+    gap: 6px;
+}
+
+.score-pill {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.score-pill.active {
+    background-color: var(--accent-yellow);
+    color: #18181b;
+    border-color: var(--accent-yellow);
+}
+
+.feedback-form textarea {
+    padding: 12px;
+    border-radius: var(--radius-btn);
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 13px;
+    resize: none;
+    outline: none;
+}
+
+.feedback-form textarea:focus {
+    border-color: var(--accent-yellow);
+}
+
+.feedback-done {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.feedback-quote {
+    font-style: italic;
+    font-size: 13px;
+    color: var(--hint-color);
+    margin-top: 6px;
+}
+
+.order-missing {
+    text-align: center;
+    padding: 40px;
+}
+
+.receipt-section {
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+
+.receipt-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    margin-bottom: 12px;
+}
+
+.receipt-brand {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+.receipt-legal {
+    font-size: 11px;
+    color: var(--hint-color);
+}
+
+.receipt-type {
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent-yellow);
+    letter-spacing: 0.5px;
+}
+
+.receipt-divider {
+    border-top: 1px dashed var(--border-color);
+    margin: 12px 0;
+}
+
+.receipt-meta,
+.receipt-totals,
+.receipt-fiscal {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+}
+
+.receipt-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.receipt-row span {
+    color: var(--hint-color);
+}
+
+.receipt-row b {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.receipt-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.receipt-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 12px;
+}
+
+.receipt-item-name {
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.receipt-item-calc {
+    display: flex;
+    justify-content: space-between;
+    color: var(--hint-color);
+}
+
+.receipt-item-calc b {
+    color: var(--text-color);
+}
+
+.receipt-totals .total-row {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.receipt-totals .total-row span {
+    color: var(--text-color);
+}
+
+.receipt-totals .total-row b {
+    color: var(--accent-yellow);
+    font-size: 16px;
+}
+
+.receipt-fiscal {
+    font-size: 11px;
+}
+
+.receipt-qr-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--border-color);
+    gap: 8px;
+}
+
+.receipt-qr {
+    width: 130px;
+    height: 130px;
+    background: #ffffff;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.receipt-qr-hint {
+    font-size: 11px;
+    color: var(--hint-color);
+    max-width: 240px;
+    line-height: 1.3;
+}
+
+/* Трекер с 5-6 шагами — компактнее */
+.status-tracker.compact .tracker-text {
+    font-size: 9px;
+}
+
+/* Подсказка для ручного заказа */
+.fill-hint-banner {
+    background-color: var(--secondary-bg);
+    border: 1px dashed var(--accent-yellow);
+    border-radius: var(--radius-card);
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fill-hint-banner p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* Кнопка оплаты неоплаченного заказа */
+.pay-now-btn {
+    background-color: var(--accent-burgundy, #991b1b) !important;
+    color: #ffffff !important;
+}
+
+/* Вкладка аутентификации */
+.auth-card {
+    border-radius: var(--radius-card);
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.auth-card.auth-ok {
+    background-color: rgba(245, 145, 50, 0.12);
+    border: 1px solid var(--accent-yellow);
+    color: var(--text-color);
+}
+
+.auth-card.auth-fail {
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.auth-card a {
+    color: var(--accent-yellow);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* Состав для ручных заказов */
+.manual-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.manual-item-line {
+    font-size: 13px;
+    line-height: 1.4;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.manual-item-line:last-child {
+    border-bottom: none;
+}
+
+/* Вкладка штрихкода */
+.barcode-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-card);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.barcode-img {
+    width: 220px;
+    max-width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.barcode-caption {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.barcode-code {
+    font-size: 12px;
+    color: var(--hint-color);
+    letter-spacing: 1px;
+}
+
+.receipt-link-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.receipt-link {
+    align-self: flex-start;
+    background-color: var(--accent-yellow);
+    color: #18181b;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: var(--radius-btn);
+}
+
+.receipt-pending {
+    font-size: 13px;
+    color: var(--hint-color);
+    line-height: 1.5;
+}

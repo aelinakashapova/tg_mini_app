@@ -1,0 +1,44 @@
+
+.header {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-home-btn {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-btn);
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-home-btn:active {
+    transform: scale(0.96);
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-username {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}

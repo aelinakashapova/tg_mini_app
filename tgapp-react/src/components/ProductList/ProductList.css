@@ -1,0 +1,50 @@
+
+.stock-page {
+    padding: 16px;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.page-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.page-heading {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.filter-trigger-btn {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-btn);
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: border-color 0.15s ease;
+}
+
+.filter-trigger-btn:active {
+    border-color: var(--accent-yellow);
+}
+
+.product-grid-two-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.no-items {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--hint-color);
+    font-size: 14px;
+}

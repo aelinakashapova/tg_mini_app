@@ -1,0 +1,26 @@
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px 20px;
+    background-color: var(--accent-yellow);
+    color: #18181b;
+    border: none;
+    border-radius: var(--radius-btn);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.button:active {
+    background-color: var(--accent-yellow-hover);
+    transform: scale(0.98);
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

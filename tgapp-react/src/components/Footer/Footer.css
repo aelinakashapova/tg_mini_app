@@ -1,0 +1,25 @@
+
+.app-footer {
+    width: 100%;
+    text-align: center;
+    padding: 16px 12px;
+    margin-top: auto;
+    font-size: 13px;
+    color: var(--tg-theme-hint-color, #8e8e93);
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.footer-support {
+    margin: 0 0 4px 0;
+}
+
+.footer-link {
+    color: var(--tg-theme-link-color, #2481cc);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-address {
+    margin: 0;
+}
